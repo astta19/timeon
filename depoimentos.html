@@ -1,0 +1,249 @@
+<html><head><base href="index.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TimeOn Suporte 24 Horas - Depoimentos de Clientes</title>
+<style>
+    :root {
+        --primary-color: #009000;
+        --secondary-color: #3498db;
+        --accent-color: #e74c3c;
+        --text-color: #333;
+        --bg-color: #ecf0f1;
+        --card-bg: #ffffff;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body, html {
+        font-family: sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    header {
+        background: linear-gradient(90deg, #05eb67, #16734c);
+        color: white;
+        padding: 1rem 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: var(--secondary-color);
+    }
+
+    #testimonials {
+        padding: 80px 0;
+        background-color: var(--bg-color);
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        color: var(--primary-color);
+    }
+
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    .testimonial-card {
+        background-color: var(--card-bg);
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .testimonial-content {
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    .testimonial-author {
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+    .testimonial-company {
+        color: var(--secondary-color);
+    }
+
+    .testimonial-rating {
+        color: #f1c40f;
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    footer {
+        background: linear-gradient(90deg, #05eb67, #16734c);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+        .testimonial-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">TimeOn Suporte 24 Horas</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>   
+        </nav>
+    </header>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"A Custom Tech Solutions superou todas as nossas expectativas. Eles não apenas entenderam nossas necessidades complexas, mas também entregaram uma solução que revolucionou nossos processos internos."</p>
+                    <p class="testimonial-author">Maria Silva</p>
+                    <p class="testimonial-company">CEO, TechInova</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"Trabalhar com a Custom Tech Solutions foi uma experiência excepcional. Sua abordagem personalizada e atenção aos detalhes resultaram em um produto final que se encaixa perfeitamente em nossa visão."</p>
+                    <p class="testimonial-author">João Ferreira</p>
+                    <p class="testimonial-company">CTO, InovaTech</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"A equipe da Custom Tech Solutions demonstrou um profissionalismo ímpar. Eles não só cumpriram o prazo, mas também ofereceram insights valiosos que melhoraram significativamente nosso projeto."</p>
+                    <p class="testimonial-author">Ana Oliveira</p>
+                    <p class="testimonial-company">Gerente de Projetos, FutureSoft</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"Estamos impressionados com a capacidade da Custom Tech Solutions de transformar conceitos complexos em soluções práticas e eficientes. Seu conhecimento técnico é verdadeiramente notável."</p>
+                    <p class="testimonial-author">Carlos Mendes</p>
+                    <p class="testimonial-company">Diretor de Inovação, TechVanguard</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"A solução personalizada desenvolvida pela Custom Tech Solutions não apenas atendeu nossas necessidades atuais, mas também nos preparou para o crescimento futuro. Seu pensamento estratégico fez toda a diferença."</p>
+                    <p class="testimonial-author">Luísa Santos</p>
+                    <p class="testimonial-company">COO, GrowthTech</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"A dedicação e o compromisso da equipe da Custom Tech Solutions são incomparáveis. Eles foram além do escopo inicial para garantir que nossa solução fosse perfeita em todos os aspectos."</p>
+                    <p class="testimonial-author">Rafael Costa</p>
+                    <p class="testimonial-company">Fundador, StartupNova</p>
+                    <div class="testimonial-rating">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TimeOn Suporte 24 Horas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Animate testimonial cards on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.testimonial-card').forEach(card => {
+        card.style.opacity = 0;
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(card);
+    });
+
+    // Add hover effect to testimonial cards
+    document.querySelectorAll('.testimonial-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+        });
+    });
+});
+</script>
+
+</body></html>
