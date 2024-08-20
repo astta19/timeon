@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 <style>
+  
     .service-card {
     transition: all 0.3s ease;
   }
@@ -14,6 +15,62 @@
     background: linear-gradient(90deg, #05eb67, #16734c);
   }
   
+  .botao{
+    background-color: #05eb67;
+    border: none;
+    color: #fff;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.botao:hover {
+    animation: none;
+}
+.message{
+    width: 235px;
+    animation: digitando 3s steps(25), blink .4s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%)
+}
+
+@keyframes digitando{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    40%{
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+
+
 </style>
 </head>
 </head>
@@ -42,10 +99,12 @@
         </button>
       </div>
     </nav>
+    
     <div class="container mx-auto px-6 py-16 text-center">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Soluções Tecnológicas Inovadoras</h1>
-      <p class="text-xl mb-8">Transformando ideias em realidade digital</p>
       
+     <h1 class="text-4xl md:text-6xl font-bold mb-4">Soluções Tecnológicas Inovadoras</h1>
+      <p class="text-xl mb-8">Transformando ideias em realidade digital</p>
+   
     </div>
   </header>
 
@@ -133,7 +192,7 @@
     <h2 class="text-3xl font-bold text-center mb-8">Pronto para impulsionar seu negócio?</h2>
     <p class="text-center text-xl mb-8">Entre em contato conosco e descubra como podemos ajudar a transformar sua visão em realidade.</p>
     <div class="text-center">
-      
+      <a target="_blank" href="https://wa.me/16992642651"><button class="botao">Saiba mais</button></a>
     </div>
   </section>
   <footer class="bg-gray-800 text-white py-8">
@@ -167,3 +226,4 @@
                 <path d="M21.543 7.104c.015
 
 </body></html>
+
