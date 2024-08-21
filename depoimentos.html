@@ -149,8 +149,9 @@
                 <li><a href="index.html">Início</a></li>
                 
                 <li><a href="depoimentos.html">Depoimentos</a></li>
+                
                 <li><a href="contato.html">Contato</a></li>
-            </ul>   
+            </ul>
         </nav>
     </header>
 
@@ -159,39 +160,43 @@
             <h2 class="section-title">O que nossos clientes dizem</h2>
             <div class="testimonial-grid">
                 <div class="testimonial-card">
-                    <p class="testimonial-content">"A Custom Tech Solutions superou todas as nossas expectativas. Eles não apenas entenderam nossas necessidades complexas, mas também entregaram uma solução que revolucionou nossos processos internos."</p>
+                    <p class="testimonial-content">"A TimeOn Suporte superou todas as nossas expectativas. Eles não apenas entenderam nossas necessidades complexas, mas também entregaram uma solução que revolucionou nossos processos internos."</p>
                     <p class="testimonial-author">Maria Silva</p>
-                    <p class="testimonial-company">CEO, TechInova</p>
                     <div class="testimonial-rating">★★★★★</div>
                 </div>
+
                 <div class="testimonial-card">
-                    <p class="testimonial-content">"Trabalhar com a Custom Tech Solutions foi uma experiência excepcional. Sua abordagem personalizada e atenção aos detalhes resultaram em um produto final que se encaixa perfeitamente em nossa visão."</p>
+                    <p class="testimonial-content">"Trabalhar com a TimeOn Suporte 24hrs foi uma experiência excepcional. Sua abordagem personalizada e atenção aos detalhes resultaram em um produto final que se encaixa perfeitamente em nossa visão."</p>
                     <p class="testimonial-author">João Ferreira</p>
-                    <p class="testimonial-company">CTO, InovaTech</p>
+                    
                     <div class="testimonial-rating">★★★★★</div>
                 </div>
+
                 <div class="testimonial-card">
-                    <p class="testimonial-content">"A equipe da Custom Tech Solutions demonstrou um profissionalismo ímpar. Eles não só cumpriram o prazo, mas também ofereceram insights valiosos que melhoraram significativamente nosso projeto."</p>
+                    <p class="testimonial-content">"A equipe da TimeOn demonstrou um profissionalismo ímpar. Eles não só cumpriram o prazo, mas também ofereceram insights valiosos que melhoraram significativamente nosso projeto."</p>
                     <p class="testimonial-author">Ana Oliveira</p>
-                    <p class="testimonial-company">Gerente de Projetos, FutureSoft</p>
+                    
                     <div class="testimonial-rating">★★★★★</div>
                 </div>
+
                 <div class="testimonial-card">
-                    <p class="testimonial-content">"Estamos impressionados com a capacidade da Custom Tech Solutions de transformar conceitos complexos em soluções práticas e eficientes. Seu conhecimento técnico é verdadeiramente notável."</p>
+                    <p class="testimonial-content">"Estamos impressionados com a capacidade da TimeOn de transformar conceitos complexos em soluções práticas e eficientes. Seu conhecimento técnico é verdadeiramente notável."</p>
                     <p class="testimonial-author">Carlos Mendes</p>
-                    <p class="testimonial-company">Diretor de Inovação, TechVanguard</p>
+                    
                     <div class="testimonial-rating">★★★★★</div>
                 </div>
+
                 <div class="testimonial-card">
-                    <p class="testimonial-content">"A solução personalizada desenvolvida pela Custom Tech Solutions não apenas atendeu nossas necessidades atuais, mas também nos preparou para o crescimento futuro. Seu pensamento estratégico fez toda a diferença."</p>
+                    <p class="testimonial-content">"A solução personalizada desenvolvida pela TimeOn não apenas atendeu nossas necessidades atuais, mas também nos preparou para o crescimento futuro. Seu pensamento estratégico fez toda a diferença."</p>
                     <p class="testimonial-author">Luísa Santos</p>
-                    <p class="testimonial-company">COO, GrowthTech</p>
+                    
                     <div class="testimonial-rating">★★★★★</div>
                 </div>
+
                 <div class="testimonial-card">
-                    <p class="testimonial-content">"A dedicação e o compromisso da equipe da Custom Tech Solutions são incomparáveis. Eles foram além do escopo inicial para garantir que nossa solução fosse perfeita em todos os aspectos."</p>
+                    <p class="testimonial-content">"A dedicação e o compromisso da equipe da TimeOn são incomparáveis. Eles foram além do escopo inicial para garantir que nossa solução fosse perfeita em todos os aspectos."</p>
                     <p class="testimonial-author">Rafael Costa</p>
-                    <p class="testimonial-company">Fundador, StartupNova</p>
+                    
                     <div class="testimonial-rating">★★★★★</div>
                 </div>
             </div>
@@ -205,42 +210,42 @@
     </footer>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+document.addEventListener( 'DOMContentLoaded' , function() {
+   
+    document.querySelectorAll( 'a[href^="#"]' ).forEach(anchor => {
+        anchor.addEventListener( 'click' , function (e) {
             e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
+            document.querySelector(this.getAttribute( 'href' )).scrollIntoView({
                 behavior: 'smooth'
             });
         });
     });
 
-    // Animate testimonial cards on scroll
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = 1;
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.transform = 'translateY(0)' ;
             }
         });
-    }, { threshold: 0.1 });
+    },{threshold: 0.1 });
 
-    document.querySelectorAll('.testimonial-card').forEach(card => {
+    document.querySelectorAll( '.testimonial-card' ).forEach(card => {
         card.style.opacity = 0;
-        card.style.transform = 'translateY(20px)';
-        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        card.style.transform = 'translateY(20px)' ;
+        card.style.transition = 'opacity 0.5s ease, transform 0.5s ease' ;
         observer.observe(card);
     });
 
-    // Add hover effect to testimonial cards
-    document.querySelectorAll('.testimonial-card').forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
+    
+    document.querySelectorAll( '.testimonial-card' ).forEach(card => {
+        card.addEventListener( 'mouseenter' , () => {
+            card.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)' ;
         });
-        card.addEventListener('mouseleave', () => {
-            card.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+        card.addEventListener( 'mouseleave' , () => {
+            card.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)' ;
         });
     });
 });
